@@ -1,0 +1,30 @@
+{
+  "name": "@royscheeren/root",
+  "version": "1.0.0",
+  "description": "Mono Repo for royscheeren projects",
+  "main": "index.js",
+  "scripts": {
+    "ls": "lerna ls",
+    "bootstrap": "lerna bootstrap",
+    "lerna:update": "lernaupdate",
+    "publish": "lerna publish",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royscheeren/royscheeren.com.git"
+  },
+  "keywords": [
+    "Personal"
+  ],
+  "author": "@royscheeren",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/royscheeren/royscheeren.com/issues"
+  },
+  "homepage": "https://github.com/royscheeren/royscheeren.com#readme",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "private": true
+}
