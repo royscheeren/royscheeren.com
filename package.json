@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/royscheeren/royscheeren.com#readme",
   "devDependencies": {
+    "husky": "^4.3.0",
     "lerna": "^3.22.1"
   },
   "private": true
