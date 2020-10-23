@@ -6,8 +6,9 @@
   "scripts": {
     "ls": "lerna ls",
     "bootstrap": "lerna bootstrap",
-    "lerna:update": "lernaupdate",
+    "lerna:update": "lerna update",
     "publish": "lerna publish",
+    "create:package": "lerna create",
     "test": "jest"
   },
   "repository": {
