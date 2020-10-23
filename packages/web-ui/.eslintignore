@@ -1,0 +1,4 @@
+scripts/*
+src/serviceWorker.js
+src/setupTests.js
+src/reportWebVitals.ts

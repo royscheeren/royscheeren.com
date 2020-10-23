@@ -9,7 +9,9 @@
     "lerna:update": "lerna update",
     "publish": "lerna publish",
     "create:package": "lerna create",
-    "test": "jest"
+    "test": "jest",
+    "_git:pre-commit:all": "lerna run _git:pre-commit --stream --concurrency=1 -- --colors",
+    "_git:pre-push:all": "lerna run _git:pre-push --stream --concurrency=1 -- --colors"
   },
   "repository": {
     "type": "git",
@@ -28,5 +30,12 @@
     "husky": "^4.3.0",
     "lerna": "^3.22.1"
   },
-  "private": true
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run _git:pre-commit",
+      "pre-push": "npm run _git:pre-push"
+    }
+  },
+  "private": true,
+  "dependencies": {}
 }
