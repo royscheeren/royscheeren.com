@@ -1,22 +1,38 @@
 {
   "name": "@royscheeren/design-system",
-  "private": true,
-  "main": "lib/index.js",
   "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w -ws _ ",
+    "clean": "bsb -clean-world",
+    "server": "moduleserve ./ --port 8000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "BuckleScript",
+    "ReasonReact",
+    "reason-react"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "@diez/engine": "^10.6.0",
-    "@diez/prefabs": "^10.6.0"
+    "bs-css-emotion": "^2.3.0",
+    "bs-storybook": "^1.1.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "reason-react": ">=0.7.1"
   },
   "devDependencies": {
-    "@diez/compiler-core": "^10.6.0",
-    "@diez/extractors": "^10.6.0",
-    "@diez/start": "^10.6.0",
-    "@diez/stdlib": "^10.6.0",
-    "diez": "^10.6.0",
-    "semver": "^6.0.0",
-    "typescript": "^3.7.2"
-  },
-  "scripts": {
-    "start": "diez start docs"
+    "@babel/core": "^7.13.1",
+    "@storybook/addon-actions": "^6.1.19",
+    "@storybook/addon-controls": "^6.1.19",
+    "@storybook/addon-essentials": "^6.1.19",
+    "@storybook/addon-links": "^6.1.19",
+    "@storybook/react": "^6.1.19",
+    "babel-loader": "^8.2.2",
+    "bs-platform": "^8.4.2",
+    "moduleserve": "^0.9.0"
   }
 }

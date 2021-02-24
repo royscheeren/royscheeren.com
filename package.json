@@ -27,13 +27,13 @@
   },
   "homepage": "https://github.com/royscheeren/royscheeren.com#readme",
   "devDependencies": {
-    "husky": "^4.3.0",
+    "husky": "^4.3.8",
     "lerna": "^3.22.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run _git:pre-commit",
-      "pre-push": "npm run _git:pre-push"
+      "pre-commit": "npm run _git:pre-commit:all",
+      "pre-push": "npm run _git:pre-push:all"
     }
   },
   "private": true,

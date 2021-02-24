@@ -1,6 +1,7 @@
 .DS_Store
-node_modules/
-lib/*
-tsconfig.tsbuildinfo
-build/
-.diez
+.merlin
+.bsb.lock
+npm-debug.log
+/lib/bs/
+/node_modules/
+/bundleOutput/
