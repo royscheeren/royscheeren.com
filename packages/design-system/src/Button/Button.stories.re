@@ -1,11 +1,7 @@
 open BsStorybook;
 
-let default = CSF.make(~title="My CSF Story", ~component=Button);
+let default = CSF.make(~title="My CSF Story", ());
 
-let button = ({ label, onClick }) => <Button label={label} onClick={onClick} />;
-button.args {
-  label: "",
-  onClick: Action.action("Clicked"),
-}
+let button = () => <Button label="" onClick={Action.action("Click")} />;
 
 button->CSF.addMeta(~name="Plain Button", ());

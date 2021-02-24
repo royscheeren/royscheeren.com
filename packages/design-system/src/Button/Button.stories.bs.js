@@ -10,7 +10,7 @@ var $$default = CSF$BsStorybook.make("My CSF Story", undefined, undefined, undef
 function button(param) {
   return React.createElement(Button$DesignSystem.make, {
               label: "",
-              onClick: AddonActions.action("Clicked")
+              onClick: AddonActions.action("Click")
             });
 }
 
